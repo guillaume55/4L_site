@@ -90,10 +90,54 @@
 						<hr />
 					</section>
 					<section>
+                        
 						<header>
 							<h3>Mise en conformitée</h3>
 						</header>
-						<div class="table-wrapper">
+                        <style>
+                            #table1{
+                                max-height: 200px;
+                                overflow: hidden;
+                                color: gray;
+                                background: linear-gradient(to bottom, transparent, #ddd); 
+                                transition: all ease-in-out 1s;
+                            }
+                            .plus-btn{
+                                background-color: #4d94ff99;
+                                padding: 20px;
+                                padding-bottom: 5px;
+                                padding-top:5px;
+                                border: 0px;
+                                margin: 10px;
+                                margin-left: 45%;
+                                font-size: 20px;
+                            }
+
+                        </style>
+						<div class="table-wrapper" id="table1">
+                            <script>
+                                function plus(id, btn_id) {
+                                
+                                    elt = document.getElementById(id)
+                                    btn = document.getElementById(btn_id)
+                                    if(btn.innerHTML.indexOf("Plus") != -1) {
+                                        elt.style.maxHeight = "400px";
+                                        elt.style.color = "black";
+                                        elt.style.background = "white";
+                                        btn.innerHTML = "&#10548 Moins";
+                                    }
+                                    else
+                                    {
+                                        elt.style.maxHeight = "200px";
+                                        elt.style.color = "gray";
+                                        elt.style.background = "linear-gradient(to bottom, transparent, #ddd)";
+                                        btn.innerHTML = "&#10549; Plus";
+                                    }
+                                    
+                                }
+                            </script>
+                            <button onclick="plus(this.parentNode.id,this.id)" id="btn_table1" class="plus-btn">&#10549; Plus</button>
+
 							<table class="default">
 								<thead>
 									<tr>
@@ -130,7 +174,9 @@
 									</tr>
 								</tfoot>
 							</table>
+                            
 						</div>
+                        
 					</section>
 					
 					<!--
