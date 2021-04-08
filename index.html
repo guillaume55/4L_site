@@ -36,15 +36,18 @@
 					etiam vivamus nunc nibh morbi.</p>
 					-->
                     <img id="custom" style="width:90%; margin-left:5%;">
+                    <div id="caption" style="color:gray;"></div>
 				</header>
                 <script>
                     const QueryString = window.location.search; 
                     const urlParams = new URLSearchParams(QueryString); 
                     if(urlParams.has('c')){
                         src  = urlParams.get('c');
+                        document.getElementById("custom").src = "images/" + src +".jpg";
+                        document.getElementById("caption").innerHTML = "Image non contractuelle. Vous seul voyez cette image."
                     }
                     
-                    document.getElementById("custom").src = "images/" + src +".jpg";
+                    
                 </script>
 
 				<div class="box alt container">
