@@ -10,6 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+        <script src="tableau.js"></script>
 	</head>
 	<body class="is-preload">
 
@@ -90,10 +91,13 @@
 					<section>
 						<header>
 							<h3>Comment nous aider ? </h3>
-							<p>Votre logo à la TV</p>
+							<p>Votre logo à la TV et dans les journaux</p>
 						</header>
-						<p>temps audimat etc</sup>prix logo <strong>strong</strong> tristique <b>bold</b> et netus <i>garés dans bordeaux</i> malesuada <em>Journaux</em> Bonne action </sub> 
-						</p>
+                        <p>Le 4L Trophy est un événement très suivi et médiatisé. Pour exemple, en 2020, sont parus quelques <strong>1800 articles</strong> sur le web et dans le journaux, <strong>150 reportages de radio</strong>, sans compter l'impact sur les <strong>réseaux sociaux</strong> et dans certains autres <strong>journaux locaux</strong> dans lesquels nous sommes déjà apparus plusieurs fois. A cela s'ajoute une <strong>cinquanitaine de reportages télévisés sur de grandes chaînes</strong>, pour pas loin de <strong>3h d'images</strong>, soit <strong>20 millions de personnes touchées</strong>. </br> De plus, nous serons garés à l'université de Bordeaux, régulièrment, et nous parcourerons les routes pour tester la voiture.</br> A tout ce temps d'audimat dont vous pouvez bénéficier s'ajoute la bone action. En effet vous allez aider, par notre intermédiaire, des populations défavarisées du sud marocain. </p>
+                    <img src="images/media3.png" style="width:100%">Source : 4L Trophy
+                    <img src="images/media.png" style="width:100%">Source : 4L Trophy
+                    
+                    <img src="images/media2.png" style="width:100%"> Source : Editions prédentes
 					</section>
 					
 					<section>
@@ -103,13 +107,8 @@
 						<p align="center"><img src="images/camembert.png" style="width: 80%"></p>
 						<hr />
 					</section>
-					<section>
-                        
-						<header>
-							<h3>Mise en conformitée</h3>
-						</header>
                         <style>
-                            #table1{
+                            #table1, #table2, #table3{
                                 max-height: 200px;
                                 overflow: hidden;
                                 color: gray;
@@ -128,8 +127,9 @@
                             }
 
                         </style>
-						<div class="table-wrapper" id="table1">
-                            <script>
+
+                        <section id="section_table1"></section>
+                        <script>
                                 function plus(id, btn_id) {
                                 
                                     elt = document.getElementById(id)
@@ -149,7 +149,19 @@
                                     }
                                     
                                 }
+                                let tab1 = [["Plaque de protection avant et arrière", "txt"],["Extincteurs","txt"]];
+                                buildTable("section_table1", "Mise en conformité", tab1);
                             </script>
+                          
+                    <!--
+					<section>
+                        
+						<header>
+							<h3>Mise en conformitée</h3>
+						</header>
+                        
+						<div class="table-wrapper" id="table1">
+                            
                             <button onclick="plus(this.parentNode.id,this.id)" id="btn_table1" class="plus-btn">&#10549; Plus</button>
 
 							<table class="default">
@@ -191,58 +203,11 @@
                             
 						</div>
                         
-					</section>
+					</section> 
+-->
+                    
 					
-					<!--
-					<section>
-						<header>
-							<h3>Table</h3>
-						</header>
-						<div class="table-wrapper">
-							<table class="default">
-								<thead>
-									<tr>
-										<th>ID</th>
-										<th>Name</th>
-										<th>Description</th>
-										<th>Price</th>
-									</tr>
-								</thead>
-								<tbody>
-									<tr>
-										<td>45815</td>
-										<td>Something</td>
-										<td>Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</td>
-										<td>29.99</td>
-									</tr>
-									<tr>
-										<td>24524</td>
-										<td>Nothing</td>
-										<td>Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</td>
-										<td>19.99</td>
-									</tr>
-									<tr>
-										<td>45815</td>
-										<td>Something</td>
-										<td>Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</td>
-										<td>29.99</td>
-									</tr>
-									<tr>
-										<td>24524</td>
-										<td>Nothing</td>
-										<td>Ut porttitor sagittis lorem, quis eleifend nisi ornare vel.</td>
-										<td>19.99</td>
-									</tr>
-								</tbody>
-								<tfoot>
-									<tr>
-										<td colspan="3"></td>
-										<td>100.00</td>
-									</tr>
-								</tfoot>
-							</table>
-						</div>
-					</section>-->
+					
 					
 				</div>
 				
