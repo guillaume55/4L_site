@@ -27,7 +27,7 @@ function buildTable(parent_id, title, data){
     var i = 1;
     tbody = document.getElementById("tbody_"+parent_id);
     data.forEach((line) => {
-        tbody.innerHTML += "<tr><td>"+ i.toString() + "</td><td>"+line[0]+"</td><td>+"+line[1]+"</td></tr>";
+        tbody.innerHTML += "<tr><td>"+ i.toString() + "</td><td>"+line[0]+"</td><td>"+line[1]+"</td></tr>";
         i+=1;
     });
 
