@@ -1,4 +1,3 @@
-
 function plus(id, btn_id) {
 
     elt = document.getElementById(id)
@@ -34,6 +33,8 @@ function buildTable(parent_id, title, data){
     });
 
 }
+
+
     
 
 
