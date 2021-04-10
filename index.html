@@ -28,11 +28,11 @@
 			<div id="main">
 
 				<header class="major container medium">
-					<span id="quote"></br><h2>Sans l'incertitude, 
+					<span id="quote"><h2>Sans l'incertitude, 
 					<br />
 					l'aventure n'existerait pas</h2>Alain Séjourné</span>
-                    <img id="custom" style="width:90%; margin-left:5%;">
-                    <div id="caption" style="color:gray;"></div>
+                    <span id="custom_pic"><img id="custom" style="width:90%; margin-left:5%;">
+                    <div id="caption" style="color:gray;"></div><span>
 				</header>
                 <script>
                     const QueryString = window.location.search; 
@@ -43,6 +43,9 @@
                         document.getElementById("custom").src = "images/" + src +".jpg";
                         
                         document.getElementById("caption").innerHTML = "Image non contractuelle. Vous seul voyez cette image."
+                    }
+                    else {
+                        document.getElementById("custom_pic").innerHTML = "";
                     }
                     
                     
