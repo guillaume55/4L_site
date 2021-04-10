@@ -28,10 +28,9 @@
 			<div id="main">
 
 				<header class="major container medium">
-					<h2>Sans l'incertitude, 
+					<span id="quote"></br><h2>Sans l'incertitude, 
 					<br />
-					l'aventure n'existerait pas</h2>Alain Séjourné</br></br>
-					
+					l'aventure n'existerait pas</h2>Alain Séjourné</span>
                     <img id="custom" style="width:90%; margin-left:5%;">
                     <div id="caption" style="color:gray;"></div>
 				</header>
@@ -40,7 +39,9 @@
                     const urlParams = new URLSearchParams(QueryString); 
                     if(urlParams.has('c')){
                         src  = urlParams.get('c');
+                        document.getElementById("quote").innerHTML = "<h2>Et si c'était aussi votre 4L ?</h2></br>";
                         document.getElementById("custom").src = "images/" + src +".jpg";
+                        
                         document.getElementById("caption").innerHTML = "Image non contractuelle. Vous seul voyez cette image."
                     }
                     
@@ -94,7 +95,7 @@
                         <p class="justify">Le 4L Trophy est un événement très médiatisé ! En 2020, uniquement via le canal télévisuel, <strong> plus de 20 millions de téléspectateur ont été touchés. </strong> A cela s'ajoute <strong>plus de 150 reportages radios et 1866 parutions dans la presse papier. </strong> </br> Nous serons garés sur le parking de notre université ainsi, <strong>toute la communauté étudiante verra</strong> notre superbe 4L aux <strong>couleurs de votre marque !</strong> En prime, telle une grande écurie, nous ferons <strong>des essais en ville</strong> de notre superbolide <strong>floqué de votre logo !</strong></br> En plus d'une vaste plubicité, votre <strong>image de marque</strong> sera <strong>magnifiée</strong> puisque vous participez à un raid humanitaire, rappelons-le ! </p>
                     <img src="images/media3.png" style="width:100%">
 					</section>
-					
+					</br>
 					<section>
 						<header>
 							<h3>Notre budget prévionnel</h3>
