@@ -4,10 +4,11 @@ function plus(id, btn_id) {
     elt = document.getElementById(id)
     btn = document.getElementById(btn_id)
     if(btn.innerHTML.indexOf("Plus") != -1) {
-        elt.style.maxHeight = "400px";
+        elt.style.maxHeight = "800px";
         elt.style.color = "black";
         elt.style.background = "white";
         btn.innerHTML = "&#10548 Moins";
+        elt.style.overflow = "vertical-scroll";
     }
     else
     {
@@ -15,6 +16,7 @@ function plus(id, btn_id) {
         elt.style.color = "gray";
         elt.style.background = "linear-gradient(to bottom, transparent, #ddd)";
         btn.innerHTML = "&#10549; Plus";
+        elt.style.overflow = "hidden";
     }   
 }
 

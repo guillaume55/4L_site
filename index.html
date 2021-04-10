@@ -130,15 +130,40 @@
 					
 					
 				</div>
-				
+                
+				<style>
+                    #lydia{
+                        width:50%;
+                        height: 1000px;
+                        max-height: 50vh;
+                    }
+                </style>
 
-				<!-- <footer class="major container medium">
-					<h3>Get shady with science</h3>
-					<p>Vitae natoque dictum etiam semper magnis enim feugiat amet curabitur tempor orci penatibus. Tellus erat mauris ipsum fermentum etiam vivamus.</p>
+				<footer class="major container medium">
+					<h3>Nous aider avec un petit don</h3>
+					<p>Si vous ne pouvez pas obtenir un emplacement sur notre magnifique 4L, vous pouvez toujours faire un petit don via notre cagnotte. N'oubliez pas, chaque euro, c'est presque 1km de parcouru. </p>
+                    <iframe id="lydia" src="https://lydia-app.com/collect/22888-la-spi-4l-trophy/fr"></iframe>
 					<ul class="actions special">
-						<li><a href="#" class="button">Join our crew</a></li>
+                        <li><button class="button" onclick="plusLydia()" id="btn-lydia">&#10549; Plus</button></li>
+						<li><a href="https://lydia-app.com/collect/22888-la-spi-4l-trophy/fr" class="button">J'aide ! (lien vers lydia-app.com)</a></li>
 					</ul>
-				</footer>-->
+				</footer>
+                <script>
+                    function plusLydia() {
+                        elt = document.getElementById("lydia")
+                        btn = document.getElementById("btn-lydia")
+                        if(btn.innerHTML.indexOf("Plus") != -1) {
+                            elt.style.maxHeight = "200vh";
+                            btn.innerHTML = "&#10548 Moins";
+                        }
+                        else
+                        {
+                            elt.style.maxHeight = "50vh";
+                            btn.innerHTML = "&#10549; Plus";
+                        }   
+                    }
+                </script>
+                
 
 			</div>
 
